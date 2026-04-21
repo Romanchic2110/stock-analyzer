@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		304345DA2F97C68D00C2958F /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 304345D92F97C68D00C2958F /* DGCharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		30FEB5422F759C1A00CF733F /* StockAnalyzer_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockAnalyzer_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				304345DA2F97C68D00C2958F /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = StockAnalyzer_;
 			packageProductDependencies = (
+				304345D92F97C68D00C2958F /* DGCharts */,
 			);
 			productName = StockAnalyzer_;
 			productReference = 30FEB5422F759C1A00CF733F /* StockAnalyzer_.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 30FEB5392F759C1A00CF733F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				304345D82F97C68D00C2958F /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 30FEB5432F759C1A00CF733F /* Products */;
 			projectDirPath = "";
@@ -328,6 +337,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		304345D82F97C68D00C2958F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		304345D92F97C68D00C2958F /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 304345D82F97C68D00C2958F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30FEB53A2F759C1A00CF733F /* Project object */;
 }
